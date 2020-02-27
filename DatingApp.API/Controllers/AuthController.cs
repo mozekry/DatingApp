@@ -30,6 +30,7 @@ namespace DatingApp.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto user)
         {
+            //throw new Exception("Register Exception55555555");
             user.userName = user.userName.ToLower();
             if (await _repo.UserExists(user.userName))
             {
@@ -46,7 +47,7 @@ namespace DatingApp.API.Controllers
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto) {
-            throw new Exception("My Exception");
+            //throw new Exception("My Exception222222");
 
             var user = await _repo.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
             if (user == null)

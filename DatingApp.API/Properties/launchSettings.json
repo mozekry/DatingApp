@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "http://localhost:4200/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Production"
       }
@@ -20,7 +20,7 @@
     "DatingApp.API": {
       "commandName": "Project",
       "launchBrowser": false,
-      "launchUrl": "api/values",
+      "launchUrl": "http://localhost:4200/",
       "applicationUrl": "http://localhost:44797",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Production"
